@@ -7,7 +7,8 @@
         ["module-resolver", {
           "root": ["./src"],
           "alias": {
-            "raft": "./src/raft"
+            "raft": "./src/raft",
+            "main": "./src/features/main"
           }
         }]
       ]
