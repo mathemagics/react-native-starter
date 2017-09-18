@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import Provider from 'raft';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,6 +14,6 @@ const styles = StyleSheet.create({
 
 export default () => (
   <View style={styles.container}>
-    <Text>Open up App.js to start working on your app!</Text>
+    <Provider />
   </View>
 );
