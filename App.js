@@ -1,19 +1,11 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
+import MainNav from 'nav/mainNav';
 
-import Provider from 'raft';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import store from 'raft';
 
 export default () => (
-  <View style={styles.container}>
-    <Provider />
-  </View>
+  <Provider store={store}>
+    <MainNav />
+  </Provider>
 );
